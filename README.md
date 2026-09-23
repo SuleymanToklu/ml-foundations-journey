@@ -39,6 +39,9 @@ graph LR
 | **04 Doğrulama** | K-Katlı Çapraz Doğrulama | Airline Customer Bookings | `cross_val_score`, K-Fold Stratejileri | `04-model-dogrulama-ve-optimizasyon/02-capraz-dogrulama-cross-val-score/` |
 | **05 Derin Öğrenme** | Keras Sequential API | Sayısal Öznitelikler | Dense Katmanları, ReLU, Adam | `05-derin-ogrenme-temelleri/01-keras-sequential-mimarisi/` |
 | **05 Derin Öğrenme** | Çok Sınıflı Anemi Tespiti | Hematolojik Kan Verisi | Softmax, Categorical Cross-Entropy | `05-derin-ogrenme-temelleri/02-anemi-tipi-cok-sinifli-softmax/` |
+| **06 Denetimsiz** | K-Means & PCA | Çok Boyutlu Sentetik Kümeler | `KMeans`, `PCA`, Siluet Skoru | `06-denetimsiz-ogrenme-ve-boyut-indirgeme/` |
+| **07 Optimizasyon**| Hiperparametre Arama | Breast Cancer Benchmark | `GridSearchCV` vs `Optuna` (TPE) | `07-otomatik-hiperparametre-optimizasyonu/` |
+| **08 Dengesiz Veri**| Sınıf Dengesizliği | Dengesiz Sınıflandırma (%95/%5)| `SMOTE`, `class_weight='balanced'` | `08-dengesiz-veri-kumeleriyle-calisma/` |
 
 ---
 
@@ -88,12 +91,17 @@ Sürekli hedef değişkenlerin tahmininde hata fonksiyonlarının matematiksel d
 
 ---
 
-## Gelecek Yol Haritası ve Eksikler (Gap Analysis)
+## Yol Haritası Gelişim Durumu (8/8 Bölüm Tamamlandı)
 
-Bu yol haritasını sıfırdan başlayan bir araştırmacı için uçtan uca eksiksiz bir makine öğrenmesi müfredatına dönüştürmek amacıyla eklenecek eksik modüller:
-- [ ] **Modül 06:** Denetimsiz Öğrenme ve Boyut İndirgeme (K-Means Kümeleme, Dirsek Yöntemi ve PCA)
-- [ ] **Modül 07:** Otomatik Hiperparametre Optimizasyonu (GridSearchCV, RandomizedSearchCV ve Optuna Entegrasyonu)
-- [ ] **Modül 08:** Dengesiz Veri Kümeleri ile Çalışma (SMOTE ile Yeniden Örnekleme ve Class Weight Dengelemesi)
+Tüm temel ve ileri düzey makine öğrenmesi aşamaları eksiksiz olarak kodlanmış ve doğrulanmıştır:
+- [x] **Bölüm 01:** Veri Ön İşleme ve Özellik Mühendisliği (Encoding, Vectorization, Scaling)
+- [x] **Bölüm 02:** Regresyon Modelleri ve Hata Analizi (MAE/MSE/RMSE, Random Forest, Audi Train-Test Split)
+- [x] **Bölüm 03:** Sınıflandırma ve Topluluk Modelleri (Logistic Regression, Decision Tree, RF, XGBoost, Titanic EDA)
+- [x] **Bölüm 04:** Model Doğrulama ve Genelleme (Bias-Variance Tradeoff, K-Fold cross_val_score)
+- [x] **Bölüm 05:** Derin Öğrenmeye Giriş (Keras Sequential API, Multiclass Softmax)
+- [x] **Bölüm 06:** Denetimsiz Öğrenme ve Boyut İndirgeme (K-Means Kümeleme, Dirsek Yöntemi ve PCA)
+- [x] **Bölüm 07:** Otomatik Hiperparametre Optimizasyonu (GridSearchCV, RandomizedSearchCV ve Optuna Entegrasyonu)
+- [x] **Bölüm 08:** Dengesiz Veri Kümeleri ile Çalışma (SMOTE ile Yeniden Örnekleme ve Class Weight Dengelemesi)
 
 ---
 
