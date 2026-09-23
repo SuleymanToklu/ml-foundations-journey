@@ -88,6 +88,15 @@ Sürekli hedef değişkenlerin tahmininde hata fonksiyonlarının matematiksel d
 
 ---
 
+## Gelecek Yol Haritası ve Eksikler (Gap Analysis)
+
+Bu yol haritasını sıfırdan başlayan bir araştırmacı için uçtan uca eksiksiz bir makine öğrenmesi müfredatına dönüştürmek amacıyla eklenecek eksik modüller:
+- [ ] **Modül 06:** Denetimsiz Öğrenme ve Boyut İndirgeme (K-Means Kümeleme, Dirsek Yöntemi ve PCA)
+- [ ] **Modül 07:** Otomatik Hiperparametre Optimizasyonu (GridSearchCV, RandomizedSearchCV ve Optuna Entegrasyonu)
+- [ ] **Modül 08:** Dengesiz Veri Kümeleri ile Çalışma (SMOTE ile Yeniden Örnekleme ve Class Weight Dengelemesi)
+
+---
+
 ## Amaç ve Vizyon
 
 Bu derleme, yapay zeka ve yazılım mühendisliği kariyerinin erken evrelerinde atılan adımları, kazanılan metodolojik disiplini ve temel veri bilimi kavramlarına olan hakimiyeti sergileyen açık kaynak bir eğitim ve referans vitrinidir.
