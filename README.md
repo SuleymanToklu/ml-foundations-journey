@@ -10,14 +10,26 @@ Her kapsamlı yapay zeka mühendisliği serüveni, makine öğrenmesi algoritmal
 
 ---
 
-## Öğrenme Müfredatı ve Modül Haritası
+## Öğrenme Müfredatı ve Uçtan Uca Makine Öğrenmesi Pipeline Akışı
 
 ```mermaid
-graph LR
-    A[01 Veri Ön İşleme & Özellik Mühendisliği] --> B[02 Regresyon & Metrikler]
-    B --> C[03 Sınıflandırma & Topluluk Modelleri]
-    C --> D[04 Model Doğrulama & Optimizasyon]
-    D --> E[05 Derin Öğrenme Temelleri]
+graph TD
+    subgraph Veri Hazırlığı ve Temsili
+        A[01 Veri Ön İşleme: Encoding, Vektörizasyon, Ölçekleme] --> B[08 Dengesiz Veri Yönetimi: SMOTE & Class Weights]
+    end
+    subgraph Denetimli Modelleme
+        B --> C[02 Regresyon Modelleri & Metrikler: MAE / MSE / RMSE]
+        B --> D[03 Sınıflandırma: Lojistik, Karar Ağaçları, XGBoost]
+    end
+    subgraph Denetimsiz Öğrenme ve Keşif
+        A --> E[06 Denetimsiz Öğrenme & Boyut İndirgeme: K-Means & PCA]
+    end
+    subgraph Doğrulama ve İleri Optimizasyon
+        C --> F[04 Model Doğrulama: Bias-Variance & K-Fold CV]
+        D --> F
+        F --> G[07 Otomatik Hiperparametre Optimizasyonu: Optuna & GridSearch]
+        G --> H[05 Derin Öğrenmeye Geçiş: Keras Sequential & Softmax]
+    end
 ```
 
 ---
